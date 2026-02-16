@@ -19,8 +19,8 @@ Alternatively, open `index.html`, `gallery.html`, or `contact.html` directly in 
 ## Development Notes
 - Three static pages: `index.html` (Home), `gallery.html`, `contact.html`.
 - Shared styles live in `styles.css`; no build pipeline.
-- Images are referenced via remote URLs, so an internet connection is required for placeholders.
-- Replace placeholder copy/artwork before going live.
+- Local artwork lives in `assets/` (cropped + balanced JPEGs).
+- Optional helper script `process-images.js` (Node + Jimp) crops/normalizes any new artwork. Run `npm install` once, then `node process-images.js` after dropping new files into `assets/`.
 
 ## Preview
-`preview.png` captures the original single-page layout and remains for reference.
+`preview.png` captures the original single-page layout and remains for reference. Current multi-page previews live in `index-preview.png`, `gallery-preview.png`, and `contact-preview.png`.
