@@ -22,10 +22,7 @@ const files = [
     const x = Math.round((width - cropWidth) / 2);
     const y = Math.round((height - cropHeight) / 2);
 
-    image.crop({ x, y, w: cropWidth, h: cropHeight })
-         .normalize()
-         .contrast(0.05)
-         .brightness(0.02);
+    image.crop({ x, y, w: cropWidth, h: cropHeight });
 
     await image.write(outputPath);
     console.log(`Processed ${file} -> ${path.basename(outputPath)}`);
