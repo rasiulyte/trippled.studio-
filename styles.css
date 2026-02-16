@@ -361,6 +361,7 @@ nav a.active {
 }
 
 .footer-nav {
+  gap: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
