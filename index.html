@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>trippled.studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="brand">trippled.studio</div>
+      <nav>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <p>Form dissolves into silence.<br />
+             Texture becomes memory.<br />
+             Each piece holds what cannot be spoken.</p>
+          <a class="ghost-link" href="#gallery">Enter Gallery →</a>
+        </div>
+        <div class="hero-frame">
+          <div class="artwork"></div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about-text">
+          <h2>About</h2>
+          <p>Art as a sanctuary for the unspoken.<br />
+             Each work draws from the silent language of stone,<br />
+             frost, and fading light.<br />
+             A meditation on the unseen, the felt but not grasped…<br />
+             A space to breathe, to feel, to remember.</p>
+        </div>
+        <div class="about-link">
+          <a class="ghost-link" href="#contact">Private inquiries →</a>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <header>
+          <div class="brand">trippled.studio</div>
+          <nav>
+            <a href="#gallery">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
+        <h2>Gallery</h2>
+        <div class="grid">
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece highlight">
+            <span>Winter Light</span>
+          </div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+          <div class="piece"></div>
+        </div>
+      </section>
+
+      <section class="detail">
+        <header>
+          <div class="brand">trippled.studio</div>
+          <nav>
+            <a href="#gallery">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
+        <h2>Private inquiries</h2>
+        <div class="detail-card">
+          <div class="detail-content">
+            <h3>Winter Light</h3>
+            <p>Oil, mixed media on canvas<br />
+               48 × 26 inches<br />
+               2024</p>
+            <p>A moment suspended in the stillness between the light and the frost.</p>
+          </div>
+          <form class="inquiry-form" id="contact">
+            <label>Name<input type="text" placeholder="Enter name" /></label>
+            <label>Email<input type="email" placeholder="Enter email" /></label>
+            <label>Message<textarea placeholder="Message"></textarea></label>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <div class="footer-nav">
+          <span>inquiries@trippled.studio</span>
+          <nav>
+            <a href="#gallery">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
