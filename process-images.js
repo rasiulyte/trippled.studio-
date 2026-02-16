@@ -5,8 +5,7 @@ const files = [
   'art-1.jpg',
   'art-2.jpg',
   'art-3.jpg',
-  'art-4.jpg',
-  'art-5.jpg'
+  'art-4.jpg'
 ];
 
 (async () => {

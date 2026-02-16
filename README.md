@@ -21,6 +21,7 @@ Alternatively, open `index.html`, `gallery.html`, or `contact.html` directly in 
 - Shared styles live in `styles.css`; no build pipeline. `gallery.js` powers the carousel interactions.
 - Local artwork lives in `assets/` (cropped + balanced JPEGs).
 - Optional helper script `process-images.js` (Node + Jimp) crops/normalizes any new artwork. Run `npm install` once, then `node process-images.js` after dropping new files into `assets/`.
+- By default the script expects `art-1.jpg` through `art-4.jpg`; add filenames there if you introduce new pieces.
 
 ## Preview
 `preview.png` captures the original single-page layout and remains for reference. Current multi-page previews live in `index-preview.png`, `gallery-preview.png`, and `contact-preview.png`.
