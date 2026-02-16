@@ -155,7 +155,7 @@ nav a.active {
   position: relative;
   background: rgba(255,255,255,0.7);
   border: 1px solid var(--border);
-  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+  box-shadow: 0 40px 90px rgba(0,0,0,0.12);
   padding: 24px;
 }
 
@@ -225,6 +225,12 @@ nav a.active {
 .carousel-control.prev { left: -16px; }
 .carousel-control.next { right: -16px; }
 
+.carousel-inquiry {
+  margin-top: 24px;
+  display: inline-block;
+  letter-spacing: 0.15em;
+}
+
 .carousel-dots {
   display: flex;
   justify-content: center;
@@ -244,55 +250,6 @@ nav a.active {
   background: var(--accent);
 }
 
-.gallery-wall {
-  padding: 64px 0 32px;
-}
-
-.wall-caption h2 {
-  font-family: 'Cormorant Garamond', serif;
-  letter-spacing: 0.3em;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-}
-
-.wall-caption p {
-  margin-top: 0;
-  color: var(--muted);
-}
-
-.wall-grid {
-  margin-top: 32px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 16px;
-}
-
-.wall-piece {
-  padding-bottom: 120%;
-  background-size: cover;
-  background-position: center;
-  border: 2px solid rgba(0,0,0,0.05);
-  position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.wall-piece:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 30px rgba(0,0,0,0.08);
-}
-
-.wall-piece.focus {
-  border: 6px solid #131313;
-}
-
-.wall-piece.focus span {
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
-  color: white;
-  letter-spacing: 0.1em;
-}
 
 .detail {
   padding: 64px 0 32px;

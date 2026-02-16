@@ -14,10 +14,10 @@ python3 -m http.server 8000
 # visit http://127.0.0.1:8000
 ```
 
-Alternatively, open `index.html`, `gallery.html`, or `contact.html` directly in a browser.
+Alternatively, open `gallery.html` or `contact.html` directly in a browser. (`index.html` simply redirects to `gallery.html`.)
 
 ## Development Notes
-- Three static pages: `index.html` (Home), `gallery.html`, `contact.html`.
+- Entry point: `gallery.html` (main experience) + `contact.html`. `index.html` is a lightweight redirect for hosts that require it.
 - Shared styles live in `styles.css`; no build pipeline. `gallery.js` powers the carousel interactions.
 - Local artwork lives in `assets/` (cropped + balanced JPEGs).
 - Optional helper script `process-images.js` (Node + Jimp) crops/normalizes any new artwork. Run `npm install` once, then `node process-images.js` after dropping new files into `assets/`.
