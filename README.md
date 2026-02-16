@@ -18,7 +18,7 @@ Alternatively, open `index.html`, `gallery.html`, or `contact.html` directly in 
 
 ## Development Notes
 - Three static pages: `index.html` (Home), `gallery.html`, `contact.html`.
-- Shared styles live in `styles.css`; no build pipeline.
+- Shared styles live in `styles.css`; no build pipeline. `gallery.js` powers the carousel interactions.
 - Local artwork lives in `assets/` (cropped + balanced JPEGs).
 - Optional helper script `process-images.js` (Node + Jimp) crops/normalizes any new artwork. Run `npm install` once, then `node process-images.js` after dropping new files into `assets/`.
 
