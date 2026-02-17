@@ -226,8 +226,9 @@ nav a.active {
 .carousel-control.next { right: -16px; }
 
 .carousel-inquiry {
-  margin-top: 24px;
-  display: inline-block;
+  grid-column: 2;
+  margin-top: 16px;
+  text-align: center;
   letter-spacing: 0.15em;
 }
 
@@ -250,6 +251,11 @@ nav a.active {
   background: var(--accent);
 }
 
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 24px;
+}
 
 .detail {
   padding: 64px 0 32px;
@@ -327,12 +333,7 @@ nav a.active {
 }
 
 
-.inquiry-cta {
-  text-align: center;
-  padding: 48px 0 32px;
-}
-
-.inquiry-cta .ghost-link {
+.carousel-inquiry .ghost-link {
   letter-spacing: 0.2em;
 }
 
