@@ -127,7 +127,7 @@ nav a.active {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 48px;
-  padding: 64px 0;
+  padding: 64px 0 96px;
   border-bottom: 1px solid var(--border);
 }
 
@@ -181,7 +181,7 @@ nav a.active {
   height: 320px;
   object-fit: cover;
   box-shadow: 0 20px 40px rgba(0,0,0,0.12);
-  border: 8px solid #111;
+  border: 8px solid #333;
 }
 
 .slide figcaption {
@@ -227,7 +227,7 @@ nav a.active {
 
 .carousel-inquiry {
   grid-column: 2;
-  margin-top: 16px;
+  margin-top: -20px;
   text-align: center;
   letter-spacing: 0.15em;
 }
@@ -305,6 +305,12 @@ nav a.active {
   background: transparent;
   font-family: inherit;
   font-size: 0.95rem;
+}
+
+.inquiry-form input::placeholder,
+.inquiry-form textarea::placeholder {
+  color: #d5cfc9;
+  font-style: italic;
 }
 
 .inquiry-form textarea {
