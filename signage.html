@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>trippled.studio — Art Fair Signage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@200;300;400&display=swap" rel="stylesheet" />
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      background: #eee9e3;
+      font-family: 'Inter', 'Helvetica Neue', sans-serif;
+      font-weight: 300;
+      color: #3a3a3a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .signage {
+      width: 100%;
+      min-height: 297mm;
+      padding: 60px 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 48px;
+    }
+
+    .brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 3.2rem;
+      letter-spacing: 0.12em;
+      color: #1c1c1c;
+    }
+
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: #d7d0c8;
+    }
+
+    .tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 1.6;
+      color: #5a5a5a;
+      max-width: 420px;
+    }
+
+    .qr-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .qr-block img {
+      width: 160px;
+      height: 160px;
+      padding: 12px;
+      background: #fff;
+      border: 1px solid #d7d0c8;
+    }
+
+    .qr-label {
+      font-family: 'Inter', sans-serif;
+      font-weight: 200;
+      font-size: 0.75rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #7c7c7c;
+    }
+
+    .works-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .works-list li {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      color: #7c7c7c;
+      letter-spacing: 0.05em;
+    }
+
+    .works-label {
+      font-family: 'Inter', sans-serif;
+      font-weight: 200;
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #a09890;
+      margin-bottom: 4px;
+    }
+
+    .footer-line {
+      width: 60px;
+      height: 1px;
+      background: #d7d0c8;
+    }
+
+    .footer-text {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      color: #a09890;
+    }
+
+    @media print {
+      body {
+        background: #eee9e3;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="signage">
+
+    <div class="brand">trippled.studio</div>
+
+    <div class="divider"></div>
+
+    <p class="tagline">Silent constellations of frost and gold.</p>
+
+    <div class="works-list">
+      <span class="works-label">Featured works</span>
+      <li>Winter Light — Oil, mixed media on canvas</li>
+      <li>Aerial Frost — Oil, mixed media on canvas</li>
+      <li>Veiled Branches — Oil, mixed media on canvas</li>
+      <li>Celestial Drift — Oil, mixed media on canvas</li>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="qr-block">
+      <img src="assets/qr-code.png" alt="QR code to trippled.studio online gallery" />
+      <span class="qr-label">View the full gallery</span>
+    </div>
+
+    <div class="footer-line"></div>
+
+    <p class="footer-text">trippled-studio.onrender.com</p>
+
+  </div>
+</body>
+</html>
